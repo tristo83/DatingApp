@@ -75,10 +75,14 @@ namespace DatingApp.API
 
             app.UseRouting();
 
-            // make sure this method is also before Authorization method
-            app.UseAuthentication();
 
+            app.UseAuthentication();
+            
             app.UseAuthorization();
+            // make sure this method is also before Authorization method
+           
+
+            
 
             
 
